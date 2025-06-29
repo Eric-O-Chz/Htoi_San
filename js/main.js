@@ -1,5 +1,5 @@
 /* ===================================================================
- * Hudson 1.0.0 - Main JS
+ * Main JS
  *
  * ------------------------------------------------------------------- */
 
@@ -298,30 +298,13 @@
 
     /*download CV 
      *-----------------------------------------------------------*/
-    const downloadCV = function() {
-    document.querySelectorAll('.download-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            try {
-                const link = document.createElement('a');
-                link.href = 'path/to/your-cv.pdf';
-                link.download = 'My-CV.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            } catch (error) {
-                console.error('Error downloading file:', error);
-                alert('Something went wrong while downloading the file.');
-            }
-        });
-    });
-    }
-
+    
+    
 
 
    /* Initialize
     * ------------------------------------------------------ */
-    (function ssInit() {
+    const ssInit = function() {
 
         ssPreloader();
         ssMoveHeader();
@@ -331,10 +314,22 @@
         ssSwiper();
         ssAlertBoxes();
         ssMoveTo();
-        downloadCV();
 
-    })();
+    };
+    ssInit();
 
 })(document.documentElement);
 
-
+function downloadCV() {
+    try {
+        const link = document.createElement('a');
+        link.href = 'images/download/MyCV.pdf';
+        link.download = 'Htoi_San_Aung_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } catch (error) {
+        console.error('Error downloading file:', error);
+        alert('Something went wrong while downloading the file.');
+    }
+}
