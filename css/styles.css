@@ -97,6 +97,7 @@
     --color-1: hsla(12, 75%, 45%, 1);
     --color-2: hsla(96, 10%, 19%, 1);
     --color-3: hsla(0, 0%, 10%, 1);
+    --color-4: rgb(23, 105, 17);
 
   /* theme color variations
    */
@@ -115,6 +116,8 @@
 
     --color-3-light: hsla(0, 0%, 16%, 1);
     --color-3-dark : hsla(0, 0%, 8%, 1);
+    --color-4-light: rgb(31, 173, 21);
+
 
   /* feedback colors
    * color-error(#ffd1d2), color-success(#c8e675), 
@@ -175,9 +178,9 @@
     --color-btn-text              : var(--color-text);
     --color-btn-hover             : var(--color-gray-11);
     --color-btn-hover-text        : var(--color-text);
-    --color-btn-primary           : var(--color-1);
+    --color-btn-primary           : var(--color-4);
     --color-btn-primary-text      : var(--color-white);
-    --color-btn-primary-hover     : var(--color-1-light);
+    --color-btn-primary-hover     : var(--color-4-light);
     --color-btn-primary-hover-text: var(--color-white);
     --color-btn-stroke            : var(--color-text-dark);
     --color-btn-stroke-text       : var(--color-text-dark);
@@ -1475,7 +1478,7 @@ dfn[title] {
 }
 
 mark {
-    background: var(--color-1-lightest);
+    background: var(--color-4-light);
     color     : var(--color-text);
 }
 
@@ -1632,7 +1635,7 @@ ul.disc li::before {
     width         : 6px;
     height        : 6px;
     border-radius : 50%;
-    background    : var(--color-1);
+    background    : var(--color-4-light);
     position      : absolute;
     left          : -0.8em;
     top           : calc(50% - 4px);
@@ -1641,11 +1644,11 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color : var(--color-1);
+    color : var(--color-4);
 }
 
 dt strong {
-    color: var(--color-1);
+    color: var(--color-4);
 }
 
 dd {
@@ -2020,7 +2023,7 @@ input[type=password]:focus,
 textarea:focus,
 select:focus {
     color        : var(--color-text);
-    border-bottom: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-4-light);
 }
 
 label,
@@ -2079,7 +2082,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-    -webkit-text-fill-color: var(--color-1);
+    -webkit-text-fill-color: var(--color-4-light);
     -webkit-transition     : background-color 5000s ease-in-out 0s;
     transition             : background-color 5000s ease-in-out 0s;
 }
@@ -2662,7 +2665,7 @@ td:last-child {
 }
 
 .stats-tabs li a:hover {
-    color: var(--color-1);
+    color: var(--color-4-light);
 }
 
 .stats-tabs li a em {
@@ -2702,7 +2705,7 @@ td:last-child {
     line-height   : var(--vspace-1);
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color         : var(--color-1);
+    color         : var(--color-4-light);
     transform     : translate(0.2em, 0);
     margin-top    : 0;
 }
@@ -2824,8 +2827,8 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .glightbox-container a {
     font-weight  : 500 !important;
-    color        : var(--color-1);
-    border-bottom: 1px dotted var(--color-1);
+    color        : var(--color-4-light);
+    border-bottom: 1px dotted var(--color-4-light);
 }
 
 .glightbox-container .gslide-inner-content {
@@ -3035,7 +3038,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .s-header {
     --header-height : 72px;
-    --logo-width    : 10.2rem;
+    --logo-width    : 5.2rem;
     --width-grid-max: calc(var(--width-sixteen-cols) - calc(var(--gutter) * 2));
     --box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.02),
                       0 2px 2px rgba(0, 0, 0, 0.02),
@@ -3124,7 +3127,9 @@ td:last-child {
     width         : var(--logo-width);
     margin        : 0;
     vertical-align: bottom;
+   
 }
+
 
 /* --------------------------------------------------------------------
  * ## main navigation
@@ -3402,7 +3407,7 @@ td:last-child {
 .s-intro__content-pretitle {
     font-weight  : 600;
     margin-bottom: var(--vspace-0_125);
-    color        : var(--color-1);
+    color        : var(--color-4-light);
 }
 
 .s-intro__content-title {
@@ -3416,7 +3421,7 @@ td:last-child {
 .s-intro__content-btns {
     --color-btn           : var(--color-text-dark);
     --color-btn-text      : var(--color-white);
-    --color-btn-hover     : var(--color-1);
+    --color-btn-hover     : var(--color-4-light);
     --color-btn-hover-text: var(--color-white);
     margin-top            : var(--vspace-2);
 }
@@ -3762,7 +3767,7 @@ td:last-child {
     .s-intro__content-btns {
         --color-btn                  : white;
         --color-btn-text             : var(--color-text-dark);
-        --color-btn-hover            : var(--color-1);
+        --color-btn-hover            : var(--color-4-light);
         --color-btn-hover-text       : white;
         --color-btn-stroke           : white;
         --color-btn-stroke-text      : white;
@@ -3816,7 +3821,7 @@ td:last-child {
     .s-intro__btn-download .btn--stroke::after {
         content         : "";
         display         : block;
-        background-color: var(--color-1);
+        background-color: var(--color-4);
         height          : 2px;
         width           : 0;
         bottom          : 0;
@@ -3896,7 +3901,7 @@ td:last-child {
     content         : "";
     height          : 0.7em;
     width           : 3px;
-    background-color: var(--color-1);
+    background-color: var(--color-4-light);
     transform       : translateY(-50%);
     position        : absolute;
     left            : 0;
@@ -3982,7 +3987,7 @@ td:last-child {
     display         : block;
     background-color: var(--color-text-dark);
     width           : 100%;
-    height          : 100%;
+    height          : 105%;         /** change to 105% **/
     transition      : all, 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
     opacity         : 0;
     visibility      : hidden;
@@ -4302,7 +4307,7 @@ td:last-child {
 
 .ss-copyright a:focus,
 .ss-copyright a:hover {
-    color: var(--color-1);
+    color: var(--color-4-light);
 }
 
 .ss-copyright span {
